@@ -9,7 +9,7 @@ class Deck:
 		
 	def build(self):
 		for s in ["Spades", "Clubs", "Diamonds", "Hearts"]:
-			for v in range(1,14):
+			for v in range(2,15):
 				self.cards.append(Card(s,v))
 				
 	def drawCard(self):

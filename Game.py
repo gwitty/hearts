@@ -64,7 +64,8 @@ class Game:
 			self.cardsPlayed.append(card)
 			if card.suit == "Hearts":
 				self.heartsBroken = True
-			print(self.players[currentPlayerIndex].name + " played the " + str(card.value) + " of " + card.suit)
+			# print(self.players[currentPlayerIndex].name + " played the " + str(card.value) + " of " + card.suit)
+			print(self.players[currentPlayerIndex].name + " played the " + card.name())
 		winningValue = 0
 		for c in trick:
 			if c.suit == leadCard.suit and c.value > winningValue:
